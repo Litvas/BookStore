@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/20250901-001-create-tables.yaml
+  - include:
+      file: db/changelog/20250901-002-insert-demo-data.yaml

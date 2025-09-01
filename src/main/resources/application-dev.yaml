@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${POSTGRES_URL}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+  liquibase:
+    change-log: classpath:/db/changelog/changelog-${ENV}.yaml
+    drop-first: true
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+server:
+  port: 8181

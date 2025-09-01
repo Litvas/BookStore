@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: bookstoreservice
+  profiles:
+    active: ${ENV}
+  mvc:
+    log-request-details: true
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
